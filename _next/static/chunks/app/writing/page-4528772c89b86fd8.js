@@ -1,0 +1,29 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[62],{5531:function(e,t,r){"use strict";r.d(t,{Z:function(){return createLucideIcon}});var a=r(2265);/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let toKebabCase=e=>e.replace(/([a-z0-9])([A-Z])/g,"$1-$2").toLowerCase(),mergeClasses=(...e)=>e.filter((e,t,r)=>!!e&&r.indexOf(e)===t).join(" ");/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var s={xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"};/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let n=(0,a.forwardRef)(({color:e="currentColor",size:t=24,strokeWidth:r=2,absoluteStrokeWidth:n,className:l="",children:o,iconNode:i,...c},d)=>(0,a.createElement)("svg",{ref:d,...s,width:t,height:t,stroke:e,strokeWidth:n?24*Number(r)/Number(t):r,className:mergeClasses("lucide",l),...c},[...i.map(([e,t])=>(0,a.createElement)(e,t)),...Array.isArray(o)?o:[o]])),createLucideIcon=(e,t)=>{let r=(0,a.forwardRef)(({className:r,...s},l)=>(0,a.createElement)(n,{ref:l,iconNode:t,className:mergeClasses(`lucide-${toKebabCase(e)}`,r),...s}));return r.displayName=`${e}`,r}},9189:function(e,t,r){Promise.resolve().then(r.bind(r,6617))},6617:function(e,t,r){"use strict";r.r(t),r.d(t,{MediumFeed:function(){return MediumFeed}});var a=r(7437),s=r(2265),n=r(5531);/**
+ * @license lucide-react v0.400.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */let l=(0,n.Z)("Clock",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]]),o=(0,n.Z)("Tag",[["path",{d:"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z",key:"vktsd0"}],["circle",{cx:"7.5",cy:"7.5",r:".5",fill:"currentColor",key:"kqv944"}]]),i=(0,n.Z)("ExternalLink",[["path",{d:"M15 3h6v6",key:"1q9fwt"}],["path",{d:"M10 14 21 3",key:"gplh6r"}],["path",{d:"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6",key:"a6xqqp"}]]),c="MonikaSharmaa";function MediumFeed(){let[e,t]=(0,s.useState)([]),[r,n]=(0,s.useState)(!0),[d,m]=(0,s.useState)(!1);return((0,s.useEffect)(()=>{let fetchPosts=async()=>{try{var e;let r="https://api.rss2json.com/v1/api.json?rss_url=".concat(encodeURIComponent("https://medium.com/feed/@".concat(c)),"&count=6"),a=await fetch(r),s=await a.json();"ok"===s.status&&(null===(e=s.items)||void 0===e?void 0:e.length)>0?t(s.items):m(!0)}catch(e){m(!0)}finally{n(!1)}};fetchPosts()},[]),r)?(0,a.jsx)("div",{className:"space-y-3",children:[1,2,3].map(e=>(0,a.jsx)("div",{className:"h-[72px] rounded-xl bg-slate-100 dark:bg-slate-800 animate-pulse"},e))}):d||0===e.length?(0,a.jsxs)("div",{className:"p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-center",children:[(0,a.jsx)("p",{className:"text-sm text-slate-500 dark:text-slate-400 mb-3",children:"Medium articles will appear here automatically once published."}),(0,a.jsx)("a",{href:"https://medium.com/@".concat(c),target:"_blank",rel:"noopener noreferrer",className:"text-sm text-amber-600 dark:text-amber-400 hover:underline font-medium",children:"View profile on Medium →"})]}):(0,a.jsx)("div",{className:"space-y-3",children:e.map(e=>{let t=new Date(e.pubDate).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});return(0,a.jsxs)("a",{href:e.link,target:"_blank",rel:"noopener noreferrer",className:"group flex items-start gap-4 p-5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-500/40 dark:hover:border-amber-500/40 transition-all duration-200",children:[(0,a.jsxs)("div",{className:"flex-1 min-w-0",children:[(0,a.jsx)("h3",{className:"text-sm font-semibold text-slate-900 dark:text-slate-100 mb-1.5 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors line-clamp-2 leading-snug",children:e.title}),(0,a.jsxs)("div",{className:"flex items-center gap-3 text-xs text-slate-400 dark:text-slate-500",children:[(0,a.jsxs)("span",{className:"flex items-center gap-1",children:[(0,a.jsx)(l,{size:11}),t]}),e.categories&&e.categories.length>0&&(0,a.jsxs)("span",{className:"flex items-center gap-1",children:[(0,a.jsx)(o,{size:11}),e.categories.slice(0,2).join(", ")]})]})]}),(0,a.jsx)(i,{size:14,className:"text-slate-300 dark:text-slate-600 group-hover:text-amber-500 flex-shrink-0 mt-0.5 transition-colors"})]},e.link)})})}},622:function(e,t,r){"use strict";/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var a=r(2265),s=Symbol.for("react.element"),n=(Symbol.for("react.fragment"),Object.prototype.hasOwnProperty),l=a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,o={key:!0,ref:!0,__self:!0,__source:!0};function q(e,t,r){var a,i={},c=null,d=null;for(a in void 0!==r&&(c=""+r),void 0!==t.key&&(c=""+t.key),void 0!==t.ref&&(d=t.ref),t)n.call(t,a)&&!o.hasOwnProperty(a)&&(i[a]=t[a]);if(e&&e.defaultProps)for(a in t=e.defaultProps)void 0===i[a]&&(i[a]=t[a]);return{$$typeof:s,type:e,key:c,ref:d,props:i,_owner:l.current}}t.jsx=q,t.jsxs=q},7437:function(e,t,r){"use strict";e.exports=r(622)}},function(e){e.O(0,[971,472,744],function(){return e(e.s=9189)}),_N_E=e.O()}]);
